@@ -1,2 +1,44 @@
 # IB-Traffic-Monitor
 infiniband monitor
+
+Overview
+IB-Traffic-Monitor is a Python-based utility designed for system administrators and HPC engineers who need to monitor InfiniBand network traffic. It provides real-time statistics on transmit and receive rates for IB interfaces, helping with performance analysis and troubleshooting.
+
+Requirements
+Python 3
+InfiniBand hardware with MLNX-OFED drivers installed
+ibdev2netdev and ethtool utilities
+
+Installation
+# Clone the repository
+git clone https://github.com/yourusername/ib-traffic-monitor.git
+cd ib-traffic-monitor
+
+# Make the script executable
+chmod +x ib_traffic_monitor.py
+
+Usage
+
+# Basic usage - monitor all interfaces
+python3 ib_traffic_monitor.py
+
+# List all available interfaces
+python3 ib_traffic_monitor.py -l
+
+# Monitor specific interfaces (comma-separated)
+python3 ib_traffic_monitor.py -i ibs1,ibs2
+
+# Change refresh interval (in seconds)
+python3 ib_traffic_monitor.py -t 5
+
+# Combined options
+python3 ib_traffic_monitor.py -i ibs1 -t 1
+
+
+Example Output
+========== IB Interface Traffic Statistics (Update: 2s) ==========
+Interface    Device     TX (Gbps)     RX (Gbps)    
+--------------------------------------------------
+ibs1         mlx5_0          1.234         2.345
+ibs2         mlx5_1          0.123         0.456
+==================================================
