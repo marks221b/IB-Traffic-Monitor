@@ -5,8 +5,11 @@ Overview
 IB-Traffic-Monitor is a Python-based utility designed for system administrators and HPC engineers who need to monitor InfiniBand network traffic. It provides real-time statistics on transmit and receive rates for IB interfaces, helping with performance analysis and troubleshooting.
 
 # Requirements
+
 Python 3
+
 InfiniBand hardware with MLNX-OFED drivers installed
+
 ibdev2netdev and ethtool utilities
 
 # Installation
