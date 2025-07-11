@@ -20,13 +20,10 @@ python3 ib_traffic_monitor.py
 
 python3 ib_traffic_monitor.py -l
 
-Monitor specific interfaces (comma-separated)
 python3 ib_traffic_monitor.py -i ibs1,ibs2
 
-Change refresh interval (in seconds)
 python3 ib_traffic_monitor.py -t 5
 
-Combined options
 python3 ib_traffic_monitor.py -i ibs1 -t 1
 
 
