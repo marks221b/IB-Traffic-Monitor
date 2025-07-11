@@ -10,28 +10,23 @@ InfiniBand hardware with MLNX-OFED drivers installed
 ibdev2netdev and ethtool utilities
 
 Installation
-# Clone the repository
-git clone https://github.com/yourusername/ib-traffic-monitor.git
+git clone https://github.com/marks221b/ib-traffic-monitor.git
 cd ib-traffic-monitor
-
-# Make the script executable
 chmod +x ib_traffic_monitor.py
 
-Usage
-
-# Basic usage - monitor all interfaces
+#Usage
+Basic usage - monitor all interfaces
 python3 ib_traffic_monitor.py
 
-# List all available interfaces
 python3 ib_traffic_monitor.py -l
 
-# Monitor specific interfaces (comma-separated)
+Monitor specific interfaces (comma-separated)
 python3 ib_traffic_monitor.py -i ibs1,ibs2
 
-# Change refresh interval (in seconds)
+Change refresh interval (in seconds)
 python3 ib_traffic_monitor.py -t 5
 
-# Combined options
+Combined options
 python3 ib_traffic_monitor.py -i ibs1 -t 1
 
 
